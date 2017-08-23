@@ -2,7 +2,9 @@ body {
     background-color: lightgray;
 }
 
-.wrapper {
+.title,
+.startbutton,
+.end {
    text-align: center;
     margin: 0 auto;
 }
