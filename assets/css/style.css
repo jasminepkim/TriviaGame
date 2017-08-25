@@ -4,7 +4,12 @@ body {
 
 .title,
 .startbutton,
-.end {
+.end,
+h3 {
    text-align: center;
     margin: 0 auto;
+}
+
+.clock {
+    font-size: 30px;
 }
