@@ -37,7 +37,6 @@ hidePageOne();
 
 $("#startbtn").click(startGame);
 $("#donebtn").click(seeResults);
-$("#donebtn").click(endPage);
 
 // FUNCTIONS
 function hidePageOne() {
@@ -63,7 +62,7 @@ function startGame() {
     $(".container").show();
     $("#donebtn").show();
     $(".clock").show();
-    setInterval("startClock()", 1000);
+    // setInterval("startClock()", 1000);
     $(".results").hide();
 }
 
@@ -77,7 +76,6 @@ function seeResults() {
     endPage();
 
 function endPage() {
-    // clearInterval(countDown);
     for (var i = 0; i < questions.length; i++) {
         var userAnswer = $('input[name=question' + i + ']:checked', '.question').val();
     if (!(userAnswer != undefined)) {
@@ -101,12 +99,18 @@ function endPage() {
 
 // Clock on page 2 will start the 30 second countdown
 function startClock() {
-    if (countDown === 0) {
-        countDown.stop();
-        seeResults();
-        endPage();
-    } else {
+    var timer = setInterval(function () {
         countDown--;
-    }
-    $("#timer").html(countDown);
+        $("#timer").html(countDown);
+    if (countDown === 0) {
+        clearInterval(timer);
+        // countDown.stop();
+        // seeResults();
+        endPage();
+    } 
+    // else {
+    //     countDown--;
+    // }
+    
+}, 1000);
 }
