@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz</title>
     <!-- Bootswatch -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- Added link to the jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,23 +16,24 @@
 <body>
     <!-- Page 1 // START -->
     <div class="title">
-        <h1>Test your JavaScript and jQuery knowledge!</h1>
+        <h2><b>Test your JavaScript and jQuery knowledge!</b></h2>
         <br>
     </div>
     <div class="startbutton">
         <a href="#" id="startbtn" class="btn btn-primary btn-lg">START</a>
         <div class="clock">
-            <span id="timer">30</span>
+            <span id="timer">30 seconds left</span>
         </div>
-        <br><br>
+        <br>
     </div>
 
     <div class="container">
         <!-- Page 2 // PLAY -->
-        <h3>
+        <h4>
             <p>Let's test your JavaScript and jQuery knowledge!</p>
-            <p>You have 30 seconds to answer the questions below. &nbsp; Good luck!</p>
-        </h3>
+            <p>You have 30 seconds to answer the questions below.</p>
+            <p>Good luck!</p>
+        </h4>
         <br>
         <!-- Questions -->
         <div class="question">
@@ -44,15 +45,15 @@
     <br>
 
     <div class="results">
-        <h3>
-            <p>Correct: <span id="corr"></span></p>
-        </h3>
-        <h3>
-            <p>Incorrect: <span id="incorr"></span></p>
-        </h3>
-        <h3>
-            <p>Unanswered: <span id="unansw"></span></p>
-        </h3>
+        <h4>
+            <p><b>Correct:&nbsp;</b> <span id="corr"></span></p>
+        </h4>
+        <h4>
+            <p><b>Incorrect:&nbsp;</b> <span id="incorr"></span></p>
+        </h4>
+        <h4>
+            <p><b>Unanswered:&nbsp;</b> <span id="unansw"></span></p>
+        </h4>
     </div>
 
     <div class="end">

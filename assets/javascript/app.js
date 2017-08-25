@@ -2,7 +2,7 @@
 var questions = [{
     question: "Javascript code contain a sequence of ____________.",
     options: ["HTML tags", "Method calls", "Executable statements", "All of these"],
-    answer: "Executable statements"
+    answer: "All of these"
 }, {
     question: "The 'add and assignment' operator is shown by this symbol:",
     options: ["+==", "+=", "==+", "=+"],
@@ -57,7 +57,7 @@ function startGame() {
     var countDown = 30;
     var timer = setInterval(function () {
         countDown--;
-        $("#timer").html(countDown);
+        $("#timer").html(countDown + " seconds left");
         if (countDown === 0) {
             clearInterval(timer);
             seeResults();
@@ -74,7 +74,7 @@ function seeResults() {
     $(".clock").hide();
     endPage();
 
-    // To count how the results
+    // To count the user's results
     function endPage() {
         var correct = 0;
         var incorrect = 0;

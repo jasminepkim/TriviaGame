@@ -1,15 +1,30 @@
 body {
-    background-color: lightgray;
+    font-family: sans-serif;
 }
 
 .title,
 .startbutton,
 .end,
-h3 {
+h3,
+h4 {
    text-align: center;
-    margin: 0 auto;
+   margin: 0 auto;
+   font-family: sans-serif;
 }
 
 .clock {
-    font-size: 30px;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+#donebtn {
+    margin-bottom: 30px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+#corr {
+    text-align: left;
 }
